@@ -16,11 +16,11 @@ I used PostgreSQL and SQL to validate and analyze the data, then built a two-pag
 
 ### ED Overview
 
-![ED Overview](images/ed_overview.png)
+![ED Overview](images/ED_Overview.png)
 
 ### Acuity Deep Dive
 
-![Acuity Deep Dive](images/acuity_deep_dive.png)
+![Acuity Deep Dive](images/Acuity_Deep_Dive.png)
 
 ---
 
