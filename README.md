@@ -139,21 +139,43 @@ For example, higher admission rates among ambulance arrivals do not mean that am
 
 ---
 
+## Reproducing the Analysis
+
+To reproduce this project:
+
+1. Download the [MIMIC-IV-ED Demo v2.2 dataset](https://physionet.org/content/mimic-iv-ed-demo/2.2/) from PhysioNet.
+2. Create a PostgreSQL database named `mimic_ed`.
+3. Run `01_database_setup.sql` to create the tables.
+4. Import the following CSV files into their corresponding tables:
+   - `edstays.csv`
+   - `triage.csv`
+   - `diagnosis.csv`
+   - `vitalsign.csv`
+5. Run the remaining SQL files in order:
+   - `02_data_quality.sql`
+   - `03_exploratory_analysis.sql`
+   - `04_final_analysis.sql`
+
+The original CSV files are not included in this repository.
+
+---
+
 ## Repository Structure
 
 ```text
 mimic-iv-ed-analysis/
 │
 ├── README.md
+│
 ├── sql/
 │   ├── 01_database_setup.sql
 │   ├── 02_data_quality.sql
 │   ├── 03_exploratory_analysis.sql
 │   └── 04_final_analysis.sql
+│
 ├── powerbi/
 │   └── MIMIC_IV_ED_Analysis.pbix
-├── images/
-│   ├── ed_overview.png
-│   └── acuity_deep_dive.png
-└── data/
-    └── README.md
+│
+└── images/
+    ├── Ed_Overview.png
+    └── Acuity_Deep_Dive.png
